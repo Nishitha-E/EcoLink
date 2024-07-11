@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoLink</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to EcoLink</h1>
+            <p>Connecting People for a Greener Future</p>
+            <a href="#signup" class="cta-button">Join the Movement</a>
+        </div>
+    </header>
+    <section id="about">
+        <div class="container">
+            <h2>About EcoLink</h2>
+            <p>EcoLink is a platform dedicated to bringing together individuals and organizations committed to environmental conservation. Our mission is to foster collaboration and innovation for a sustainable future.</p>
+        </div>
+    </section>
+    <section id="features">
+        <div class="container">
+            <div class="features-box">
+                <h2>Platform Features</h2>
+                <ul>
+                    <li>Connect with Like-minded Individuals</li>
+                    <li>Access to Resources and Tools</li>
+                    <li>Collaborate on Environmental Projects</li>
+                    <li>Track and Share Your Impact</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="signup">
+        <div class="container">
+            <h2> Let's Connect ! </h2>
+            <form id="signup-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Sign Up</button>
+                <p id="success-message" style="display:none;">Thank you for joining EcoLink! Please fill in your details below.</p>
+            </form>
+            <form id="details-form" style="display:none;">
+                <div class="form-group">
+                    <label for="name"> Full Name:</label>
+                    <input type="text" id="name" name="name" pattern="[A-Za-z\s]+" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone no:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]+" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="4" cols="50" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="thank-you-message" style="display:none;">Thank you for submitting your details!</p>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 EcoLink. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
